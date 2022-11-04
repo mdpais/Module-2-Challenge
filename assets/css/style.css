@@ -38,7 +38,7 @@ div.hero {
 nav {
   background-color: var(--box);
   width: 95%;
-  padding: 10px 4% 10px 370px;
+  padding: 10px 3% 10px 280px;
   position: absolute;
   top: 30px;
   border-radius: 5px;
@@ -52,13 +52,29 @@ nav > div {
   display: inline-block;
 }
 
+nav > div:nth-child(1) {
+  min-width: 119px;
+}
+
+nav > div:nth-child(2) {
+  min-width: 87px;
+}
+
+nav > div:nth-child(3) {
+  min-width: 132px;
+}
+
+nav > div:nth-child(4) {
+  min-width: 92px;
+} 
+
 nav a {
   text-decoration: none;
   color: var(--font);
 }
 
 nav span {
-  padding-left: 5px;
+  padding-left: 4px;
   font-weight: bold;
 }
 
@@ -142,24 +158,28 @@ div.work {
 img.sampleimage {
   max-width: 100%;
   min-width: 400px;
+  border: 10px solid var(--box);
 }
 
 div.sample {
   flex: 1 0 0;
   margin: 20px;
   text-align: center;
-  border: 10px solid var(--box);
   position: relative;
 }
 
 div.label {
   max-width: 100%;
   position: absolute;
-  left: -39px;
-  bottom: 20px;
+  left: -29px;
+  bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+div.label img{
+  max-width: 100%;
 }
 
 div.text {
@@ -188,10 +208,76 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
-  main,
-  nav {
+  main, nav {
     flex-direction: column;
+    align-items: flex-end;
+  }
+
+  nav > div {
+    padding: 5px 0px;
+  }
+
+  div.blocks {
+    flex-wrap: wrap;
+  }
+
+  div.blocks p {
+    display: block;
+    width: 100%;
   }
 }
 
+@media screen and (max-width: 480px) {
+  nav > div {
+    margin-right: -15px;
+  }
+  
+  img.me {
+    height: 180px;
+    box-shadow: -4px 5px 5px #888888;
+  }
+  
+  figcaption {
+    width: 180px;
+  }
+  
+  h1 {
+    font-size: 18px;
+  }
+  
+  h2 {
+    font-size: 15px;
+  }
+  
+  div.header {
+    padding-right: 15px;
+    justify-content: right;
+  }
+  
+  div.body {
+    padding-left: 25px;
+  } 
+  
+  div.sample {
+    margin: 10px;
+  }
 
+  img.sampleimage {
+    min-width: 160px;
+    border: 5px solid var(--box);
+  }
+  
+  div.label {
+    width: 150px;
+    left: -18px;
+    bottom: 10px;
+  }
+  
+  div.label img {
+    width: 150px;
+  }
+
+  div.text {
+    font-size: 12px;
+  }
+}

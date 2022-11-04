@@ -18,7 +18,7 @@ Included on the live page
  
 ##Link to deployed application
 
-https://mdpais.github.io/Professional-Portfolio/
+https://mdpais.github.io/Module-2-Challenge/
 
 ##License
 
