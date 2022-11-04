@@ -216,6 +216,19 @@ ul {
   nav > div {
     padding: 5px 0px;
   }
+  
+  img.me {
+    height: 220px;
+  }
+  
+  figcaption {
+    width: 220px;
+  }
+
+  img.sampleimage {
+    min-width: 250px;
+    border: 7px solid var(--box);
+  }
 
   div.blocks {
     flex-wrap: wrap;
@@ -224,6 +237,20 @@ ul {
   div.blocks p {
     display: block;
     width: 100%;
+  }
+  
+  div.label {
+    width: 150px;
+    left: -18px;
+    bottom: 10px;
+  }
+  
+  div.label img {
+    width: 150px;
+  }
+
+  div.text {
+    font-size: 12px;
   }
 }
 
@@ -234,7 +261,6 @@ ul {
   
   img.me {
     height: 180px;
-    box-shadow: -4px 5px 5px #888888;
   }
   
   figcaption {
@@ -265,19 +291,5 @@ ul {
   img.sampleimage {
     min-width: 160px;
     border: 5px solid var(--box);
-  }
-  
-  div.label {
-    width: 150px;
-    left: -18px;
-    bottom: 10px;
-  }
-  
-  div.label img {
-    width: 150px;
-  }
-
-  div.text {
-    font-size: 12px;
   }
 }
