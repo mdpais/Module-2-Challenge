@@ -1,0 +1,197 @@
+:root {
+  --line: #546787;
+  --bg: #dbcbd8;
+  --box: #d8a47f;
+  --font: #101935;
+  --misc: #9ad4d6;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  color: var(--font);
+  background-color: var(--bg);
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--line);
+}
+
+header {
+  width: 100%;
+}
+
+div.hero {
+  background-image: url("../images/wild_garlic_white_green.jpg");
+  height: 400px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+nav {
+  background-color: var(--box);
+  width: 95%;
+  padding: 10px 4% 10px 370px;
+  position: absolute;
+  top: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: right;
+}
+
+nav > div {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--font);
+}
+
+nav span {
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+img.icon {
+  height: 20px;
+}
+
+div.imgncaption {
+  z-index: 20;
+  position: absolute;
+  top: 15px;
+  left: 8%;
+  text-align: center;
+}
+
+figure.profilepic {
+  z-index: 25;
+}
+
+img.me {
+  height: 270px;
+  box-shadow: -4px 5px 5px #888888;
+}
+
+figcaption {
+  z-index: 15;
+  top: 270px;
+  text-align: center;
+  background-color: var(--misc);
+  width: 250px;
+  margin: -15px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+main {
+  padding: 10px;
+  width: 95%;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+section {
+  display: flex;
+  margin: 30px 0px 50px 0px;
+}
+
+div.header {
+  width: 25%;
+  display: inline-block;
+  padding: 25px 50px 22px 0px;
+  text-align: right;
+  border-right: 3px solid var(--line);
+}
+
+div.body {
+  width: 75%;
+  display: inline-block;
+  padding: 20px 0px 22px 50px;
+}
+
+p {
+  line-height: 18px;
+}
+
+div.work {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+}
+
+img.sampleimage {
+  max-width: 100%;
+  min-width: 400px;
+}
+
+div.sample {
+  flex: 1 0 0;
+  margin: 20px;
+  text-align: center;
+  border: 10px solid var(--box);
+  position: relative;
+}
+
+div.label {
+  max-width: 100%;
+  position: absolute;
+  left: -39px;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.text {
+  position: absolute;
+  padding-top: 20px;
+  width: 78%;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+div.blocks {
+  display: flex;
+  justify-content: space-around;
+}
+
+div.blocks p {
+  display: inline-block;
+}
+
+ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  line-height: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+}
+
+
