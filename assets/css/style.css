@@ -1,295 +1,77 @@
-:root {
-  --line: #546787;
-  --bg: #dbcbd8;
-  --box: #d8a47f;
-  --font: #101935;
-  --misc: #9ad4d6;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 14px;
-  color: var(--font);
-  background-color: var(--bg);
-  padding: 0px;
-}
-
-a {
-  text-decoration: none;
-  color: var(--line);
+body  {
+  background-color: #fff;
 }
 
 header {
-  width: 100%;
-}
-
-div.hero {
-  background-image: url("../images/wild_garlic_white_green.jpg");
-  height: 400px;
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 5;
-}
-
-nav {
-  background-color: var(--box);
-  width: 95%;
-  padding: 10px 3% 10px 280px;
-  position: absolute;
-  top: 30px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: right;
-}
-
-nav > div {
-  padding-left: 10px;
-  padding-right: 10px;
-  display: inline-block;
-}
-
-nav > div:nth-child(1) {
-  min-width: 119px;
-}
-
-nav > div:nth-child(2) {
-  min-width: 87px;
-}
-
-nav > div:nth-child(3) {
-  min-width: 132px;
-}
-
-nav > div:nth-child(4) {
-  min-width: 92px;
-} 
-
-nav a {
-  text-decoration: none;
-  color: var(--font);
-}
-
-nav span {
-  padding-left: 4px;
-  font-weight: bold;
-}
-
-img.icon {
-  height: 20px;
-}
-
-div.imgncaption {
-  z-index: 20;
-  position: absolute;
-  top: 15px;
-  left: 8%;
-  text-align: center;
-}
-
-figure.profilepic {
-  z-index: 25;
-}
-
-img.me {
-  height: 270px;
-  box-shadow: -4px 5px 5px #888888;
-}
-
-figcaption {
-  z-index: 15;
-  top: 270px;
-  text-align: center;
-  background-color: var(--misc);
-  width: 250px;
-  margin: -15px;
-  padding-top: 25px;
-  padding-bottom: 15px;
-  border-radius: 5px;
+  background-color: #212529;
 }
 
 main {
-  padding: 10px;
-  width: 95%;
-  /* display: flex;
-  flex-wrap: wrap; */
+  background-color: #212529;
+  color: #d2d2d2;
 }
 
-h1 {
-  font-size: 20px;
+.powder-blue  {
+background-color: #e6ffff;
+color: #005975;
 }
 
-h2 {
-  font-size: 18px;
+.blue-green {
+  background-color: #005975;
 }
 
 section {
-  display: flex;
-  margin: 30px 0px 50px 0px;
+  padding-bottom: 1rem;
 }
 
-div.header {
-  width: 25%;
-  display: inline-block;
-  padding: 25px 50px 22px 0px;
-  text-align: right;
-  border-right: 3px solid var(--line);
+h3  {
+  padding-top: 10px;
 }
 
-div.body {
-  width: 75%;
-  display: inline-block;
-  padding: 20px 0px 22px 50px;
+.card-header  {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  background-color: #1e2b2f;
+  color: #d2d2d2;
 }
 
-p {
-  line-height: 18px;
+.card-body  {
+  background-color: #2B3035;
+  color: #d2d2d2;
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
-div.work {
-  display: flex;
-  flex-wrap: wrap-reverse;
-  justify-content: space-between;
+.card-body>ul>li {
+  background-color: #2B3035;
+  color: #d2d2d2;
 }
 
-img.sampleimage {
-  max-width: 100%;
-  min-width: 400px;
-  border: 10px solid var(--box);
+.card-container {
+  width: 100%;
 }
 
-div.sample {
-  flex: 1 0 0;
-  margin: 20px;
-  text-align: center;
-  position: relative;
+.grey {
+  background-color: #2B3035;
 }
 
-div.label {
-  max-width: 100%;
-  position: absolute;
-  left: -29px;
-  bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.powder-blue>div>div>a {
+  color: #2B3035;
+  text-decoration: none;
 }
 
-div.label img{
-  max-width: 100%;
+svg {
+  margin-right: 10px;
 }
 
-div.text {
-  position: absolute;
-  padding-top: 20px;
-  width: 78%;
+footer  {
+  color: #d2d2d2;
 }
 
-h3 {
-  font-weight: bold;
+.btn-dark {
+  background-color: #1e2b2f;
 }
 
-div.blocks {
-  display: flex;
-  justify-content: space-around;
-}
-
-div.blocks p {
-  display: inline-block;
-}
-
-ul {
-  list-style-type: circle;
-  padding-left: 20px;
-  line-height: 18px;
-}
-
-@media screen and (max-width: 768px) {
-  main, nav {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  nav > div {
-    padding: 5px 0px;
-  }
-  
-  img.me {
-    height: 220px;
-  }
-  
-  figcaption {
-    width: 220px;
-  }
-
-  img.sampleimage {
-    min-width: 250px;
-    border: 7px solid var(--box);
-  }
-
-  div.blocks {
-    flex-wrap: wrap;
-  }
-
-  div.blocks p {
-    display: block;
-    width: 100%;
-  }
-  
-  div.label {
-    width: 150px;
-    left: -18px;
-    bottom: 10px;
-  }
-  
-  div.label img {
-    width: 150px;
-  }
-
-  div.text {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  nav > div {
-    margin-right: -15px;
-  }
-  
-  img.me {
-    height: 180px;
-  }
-  
-  figcaption {
-    width: 180px;
-  }
-  
-  h1 {
-    font-size: 18px;
-  }
-  
-  h2 {
-    font-size: 15px;
-  }
-  
-  div.header {
-    padding-right: 15px;
-    justify-content: right;
-  }
-  
-  div.body {
-    padding-left: 25px;
-  } 
-  
-  div.sample {
-    margin: 10px;
-  }
-
-  img.sampleimage {
-    min-width: 160px;
-    border: 5px solid var(--box);
-  }
+hr  {
+  border-color: #1e2b2f;
 }
