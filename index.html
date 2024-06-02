@@ -1,103 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marie-dale Pais | Technical Writer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <header>
-        <div class="hero">
-        <nav>
-            <div><a href="#about"><img class="icon" src="assets/images/user-alt.png" alt="About Me icon"><span>About Me</span></a></div>
-            <div><a href="#work"><img class="icon" src="assets/images/passport.png" alt="Work Samples icon"><span>Work</span></a></div>
-            <div><a href="#contact"><img class="icon" src="assets/images/phone.png" alt="Contact Me icon"><span>Contact Me</span></a></div>
-            <div><a href="#credit"><img class="icon" src="assets/images/signlanguage.png" alt="Credit icon"><span>Credit</span></a></div>
-        </nav>
-        <div class="imgncaption">
-        <figure class="profilepic"><img class="me" src="assets/images/AvatarM-d.jpg"></figure>
-        <figcaption>
-            <h1>Marie-dale Pais</h1>
-        </figcaption>
+  <header class="container ps-0">
+    <div class="d-flex"><div class="powder-blue ps-5 pe-5">
+      <h1 class="pt-5">Marie-dale Pais</h1>
+      <h4 class="pb-4">Technical Writer</h4></div>
+    </div>
+  </header>
+
+  <nav class="navbar bg-primary navbar-expand-lg bg-body-tertiary container ps-5 pe-5" data-bs-theme="dark">
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item me-4">
+            <a class="nav-link active" aria-current="page" href="#about-me">ABOUT ME</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="#skills">SKILLS</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="#work-samples">PORTFOLIO</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="#contact">SOCIAL MEDIA</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          New Brunswick, Canada
+        </span>
+      </div>
+      
+  </nav>
+  <hr class="border border-2 opacity-100 border-secondary container mt-0 mb-0">
+
+  <main class="container mt-0 mb-0 ps-0 pe-0">
+    <section id="about-me" class="ms-0 me-0 pt-4 ps-5 pe-5">
+      <h3>About Me</h3>
+      <p>A restless soul with strong logic and a penchant for puzzles - designing this page itself ate into
+        time I
+        should have dedicated elsewhere (primarily sleep) simply because I wanted incorporate a bunch of features and
+        had to see it work perfectly. My interests as a teenager exposed me to some HTML and CSS and my most recent
+        stint in technical writing required me draw on some of that almost forgotten knowledge, which reignited my
+        interest in coding. So here we are.</p>
+    </section>
+
+    <section id="skills" class="ms-5 me-0 pt-4 ps-5 pe-0 powder-blue d-flex">
+      <div class="me-auto"><h3 class="mb-4">Skills</h3></div><div class="d-flex card-container justify-content-evenly">
+      <div class="card text-center text-bg-dark mb-3 mb-sm-0" style="width: 24rem;">
+        <div class="card-header card-title fs-5">
+          Professional Skills
+        </div><div class="card-body">
+        <ul class="list-group list-group-flush bg-secondary-color">
+          <li class="list-group-item">Technical Writing</li>
+          <li class="list-group-item">Communication</li>
+          <li class="list-group-item">Research</li>
+          <li class="list-group-item">Collaboration</li>
+          <li class="list-group-item">Editing/Proofreading</li>
+          <li class="list-group-item">Critical Thinking</li>
+          <li class="list-group-item">Team Management</li>
+          <li class="list-group-item">Time Management</li>
+        </ul></div>
+    </div>
+    <div class="card text-center text-bg-dark " style="width: 24rem;">
+      <div class="card-header card-title fs-5">
+        Technical Skills
+      </div><div class="card-body">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Madcap Flare & Lingo</li>
+        <li class="list-group-item">OpenText/MS Office</li>
+        <li class="list-group-item">HTML/XML/CSS/Javascript</li>
+        <li class="list-group-item">Adobe Photoshop</li>
+        <li class="list-group-item">Corel Draw</li>
+        <li class="list-group-item">TechSmith Snagit</li>
+        <li class="list-group-item">Scribe</li>
+        <li class="list-group-item">Git</li>
+      </ul>
+    </div></div></div>
+    </section>
+
+    <section id="work-samples" class="ms-0 me-0 pt-4 ps-5 pe-5">
+      <h3>Portfolio</h3>
+      <div class="d-flex card-container mt-4 justify-content-between">
+        <div class="card mb-3 me-5">
+          <h5 class="card-header">Online Help Center</h5>
+          <div class="card-body pt-3">
+            <p class="fw-semibold">The biggest challenge of my career.</p>
+            <p>I had to develop an entire Online Help Centre for
+              a software that was already in the market for 20 years and didn't have much documentation. The challenge
+              was that the software is highly customizable by users using the settings available, and the software was
+              further customized (terms used, special pages, etc.) for most of the clients. To overcome this it was
+              decided that we wouldn't use any screenshots in Online Help to avoid confusion. Added to that there were
+              a lot of inconsistencies in the terms used, page layouts and functionality. It isn't my finest work at
+              the end of the day, but I'm really proud of what I achieved despite all the obstacles.</p>
+            <a href="https://qssweb.com/ch/onlinehelp/generic/Default.htm"  target="_blank" class="btn btn-dark">View Live</a>
+          </div>
         </div>
+        <div class="card mb-3">
+          <h5 class="card-header">Standard Operating Procedures</h5>
+          <div class="card-body pt-3">
+            <p>Created SOPs (text and flow-charts) for several companies under non-disclosure
+              agreements. None of those are in the public domain, so I can't legally share them.</p>
+          </div>
         </div>
-    </header>
-    <main>
-        <section>
-            <div class="header">
-                <h2 id="about">About Me</h2>
-            </div>
-            <div class="body">
-            <article>
-                <p>A restless soul with strong logic and a penchant for puzzles - designing this page itself ate into time I should have dedicated elsewhere (primarily sleep) simply because I wanted incorporate a bunch of features and had to see it work perfectly. My interests as a teenager exposed me to some html and css and my most recent stint in technical writing required me draw on some of that almost forgotten knowledge, which reignited my interest in coding. So here we are.
-                </p>
-            </article>
-            </div>
-        </section>
-        <section>
-            <div class="header">
-                <h2 id="work">Work</h2>
-            </div>
-            <div class="body work">
-                <div class="sample">
-                    <a href="https://mdpais.github.io/FIFA-Fever/"><img src="assets/images/ball.jpg" alt="Image of a laptop surfing the net" class="sampleimage"></a>
-                    <div class="label">
-                        <a href="https://mdpais.github.io/FIFA-Fever/"><img src="assets/images/bookmark.png"></a>
-                        <div class="text">
-                            <h3><a href="https://mdpais.github.io/FIFA-Fever/">FIFA Fever</a></h3>
-                            <p><a href="https://mdpais.github.io/FIFA-Fever/">with HTML CSS & JS</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="sample">
-                    <a href="https://mdpais.github.io/Module-1-Challenge/"><img src="assets/images/laptop.jpg" alt="Abstract image" class="sampleimage"></a>
-                    <div class="label">
-                        <a href="https://mdpais.github.io/Module-1-Challenge/"><img src="assets/images/bookmark.png"></a>
-                        <div class="text">
-                        <h3><a href="https://mdpais.github.io/Module-1-Challenge/">Sample Application</a></h3>
-                        <p><a href="https://mdpais.github.io/Module-1-Challenge/">Incomplete</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="sample">
-                    <a href="https://www.qssweb.com/CH/OnlineHelp/Generic/en-US/Content/Home.htm"><img src="assets/images/help_key.jpg" alt="Image of Help key on keyboard" class="sampleimage"></a>
-                    <div class="label">
-                        <a href="https://www.qssweb.com/CH/OnlineHelp/Generic/en-US/Content/Home.htm"><img src="assets/images/bookmark.png"></a>
-                        <div class="text">
-                        <h3><a href="https://www.qssweb.com/CH/OnlineHelp/Generic/en-US/Content/Home.htm">Online Help Center</a></h3>
-                        <p><a href="https://www.qssweb.com/CH/OnlineHelp/Generic/en-US/Content/Home.htm">with Madcap Flare</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="header">
-                <h2 id="contact">Contact</h2>
-            </div>
-            <div class="body blocks">
-                <p>(506) 123-4567</p>
-                <p><a href="mailto:md@abc.xyz">md@abc.xyz</a></p>
-                <p><a href="https://ca.linkedin.com/in/mdpais">LinkedIn Profile</a></p>
-                <p><a href="https://github.com/mdpais/Module-2-Challenge">GitHub</a></p>
-            </div>
-        </section>
-        <section>
-            <div class="header">
-                <h2 id="credit">Credit</h2>
-            </div>
-            <div  class="body">
-                <p>This portfolio has been designed without paying a single cent thanks to free content provided by:</p>
-                <ul>
-                    <li><a href="https://all-free-download.com/">all-free-download.com</a></li>
-                    <li><a href="https://coolors.co/">coolors.co</a></li>
-                    <li><a href="https://www.photopea.com/">photopea.com</a></li>
-                </ul>
-            </div>
-        </section>
-    </main>
+      </div>
+      <div class="d-flex card-container mt-4 justify-content-between">
+        <div class="card mb-3 me-5">
+          <h5 class="card-header">E-newsletter</h5>
+          <div class="card-body pt-3">
+            <p >Created the graphics, layout and did the typesetting for a bi-monthly (initially
+              monthly) newsletter for the 7 years during which it was active.</p>
+            <a href="http://femnet.goanet.org/archive.php"  target="_blank" class="btn btn-dark">View Archives</a>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <h5 class="card-header">New Game Instructions</h5>
+          <div class="card-body pt-3">
+            <p>Wrote the pack insert instructions for a brand-new card game on the market. Also
+              designed graphics for the cards, the packaging and the pack insert.</p>
+            <a href="https://drive.google.com/file/d/1bvbmEc-NB-tPGV5C636ozlkgNnX3H6dv/view"  target="_blank" class="btn btn-dark">View</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="ms-0 me-5 pt-4 ps-5 pe-5 powder-blue d-flex">
+      <div class="me-auto" style="width: 24rem;"><h3 class="mb-4">Social Media</h3></div>
+      <div class="d-flex card-container justify-content-around pt-3">
+      <div><a href="https://www.linkedin.com/in/mdpais/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin pe" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+      </svg>LinkedIn</a></div>
+        <div><a href="https://github.com/mdpais" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+        </svg>GitHub</a></div>
+        </div>
+    </section>
+
+  </main>
+
+  <hr class="border border-2 opacity-100 border-secondary container mt-0 mb-0">
+  <footer class="container mt-0 mb-0 ps-0 pe-0">
+    <div class="pt-4 pb-2 ps-5 pe-5 grey">
+      <p>&copy; 2024 Marie-dale Pais. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
